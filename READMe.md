@@ -20,7 +20,7 @@ This is the fist responsive page i made following along a course im taking in ud
 
 ### Links
 
-- Live Site URL: [https://morbitdemon.github.io/HTML-CSS-Basics-Summary/]
+- Live Site URL: [https://morbitdemon.github.io/Webfood/]
 
 ## My process
 
