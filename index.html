@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <title>WebFood</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="page-logo">
+        <a href="index.html">WebFood</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Browse Meals</a></li>
+          <li><a href="">My Orders</a></li>
+        </ul>
+      </nav>
+      <!-- This will only appear in the mobile version -->
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <!-- This will display only when we press the hamburguer icon on a portrait phone -->
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="">Browse Meals</a></li>
+          <li><a href="">My Orders</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Browse Our Delicious Meals</h1>
+      <section id="cards">
+        <ul>
+          <li class="food-item">
+            <article>
+              <img src="images/risotto.jpg" alt="risotto meal" />
+              <div class="food-item-content">
+                <h2>Risotto with Tiger Prawns</h2>
+                <a href="" class="btn">Add To Cart</a>
+              </div>
+            </article>
+          </li>
+          <li class="food-item">
+            <article>
+              <img src="images/cheeseburgers.jpg" alt="cheeseburger meal" />
+              <div class="food-item-content">
+                <h2>Cheeseburgers</h2>
+                <a href="" class="btn"> Add To Cart</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

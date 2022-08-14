@@ -1,0 +1,185 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    background-color: rgb(44, 41, 38);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(185, 131, 31);
+}
+
+#main-header{
+    background-color: rgb(29, 26, 24);
+    display: flex;
+
+    /* Always on the Y Axis */
+    justify-content: space-between;
+    /* Always on the X Axis */
+    align-items: center;
+
+    padding: 0 5%;
+    height: 5rem;
+}
+
+#page-logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-btn{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+#main-header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header nav a{
+   margin: 0 1rem;
+   font-size: 1.2rem;
+}
+
+#main-header nav a:hover{
+    color: rgb(228, 163, 44);
+}
+
+/* #side-drawer is Only visible in mobile version */
+#side-drawer{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#side-drawer:target{
+    display: block;
+}
+
+
+#side-drawer header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+    height: 5rem;
+}
+
+#side-drawer ul{
+    display: flex;
+    margin: 0;
+    padding: 4rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+#side-drawer li{
+    margin: 1rem 0;
+}
+
+#side-drawer a{
+    font-size: 2rem;
+}
+
+main h1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 3rem;
+}
+
+#cards{
+    /* limit the space this will use */
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#cards ul{
+    /* We use Grid because we are styling a 2 dimensional layout, so its way easier */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.food-item{
+    background-color: burlywood;
+    border-radius: 8px;
+
+    /* To hide the sharp corners in the img, as it overflows it */
+    overflow: hidden;
+}
+
+.food-item img{
+    /* Define the height of the image for easier styling */
+    height: 15rem;
+
+    /* We add 100% width to fill the entire width available */
+    width: 100%;
+    object-fit: cover;
+    list-style: none;
+}
+
+.food-item-content{
+    text-align: center;
+    padding: 1rem;
+}
+
+.food-item h2{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(206, 153, 21);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: rgb(221, 134, 34);
+}
+
+/* Portrait (mobile) mode from 768px/48rem */
+
+@media (max-width: 48rem) {
+    #main-header nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    #cards ul{
+        grid-template-columns: 1fr;
+    }
+
+}
